@@ -1,11 +1,12 @@
 from flask import Flask, request, render_template, jsonify
 import pandas as pd
 import numpy as np
+import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # =========================
 # LOAD DATA
 # =========================
