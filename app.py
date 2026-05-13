@@ -10,8 +10,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # =========================
 # LOAD DATA
 # =========================
-kbf_data = pd.read_csv('kbf_preprocessed.csv')
-cbf_data = pd.read_csv('cbf_preprocessed.csv')
+kbf_data = pd.read_csv(os.path.join(BASE_DIR, 'kbf_preprocessed.csv'))
+cbf_data = pd.read_csv(os.path.join(BASE_DIR, 'cbf_preprocessed.csv'))
 
 # =========================
 # DISKRETISASI RATING (1–5)
